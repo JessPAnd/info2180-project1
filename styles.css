@@ -1,11 +1,148 @@
-/* Add your CSS to this file */
+/* fonts */
 body {
-    margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+/* header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 }
+
+header .container nav {
+    justify-content: flex-end;
+}
+
+header .container nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .container nav ul li a {
+    color: #6b7280;
+}
+
+header .container nav ul li a:hover {
+    color: #5A67D8;
+}
+
+/* overview */
+.overview-hero .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E2E8F0;
+}
+
+/* about us */
+.learn-about .container .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learn-about .container h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about .container .cards .card {
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+}
+
+.learn-about .container .cards .card .card-body h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* covid area */
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4A5568;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.testing .container .testing-desciption {
+    order: 1;
+}
+
+.testing .container .cta {
+    order: 2;
+}
+
+.testing .container .cta a {
+    background-color: #48BB78;
+    border-radius: 5px;
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+}
+
+
+
+/* stories */
+.stories .container article {
+   display:flex; 
+   align-items:center; 
+   margin-top: 50px;
+   gap:20px; 
+}
+
+.stories .container h2,
+.stories .container article a {
+    margin-top: 50px;
+   color:#5A67D8; 
+}
+
+.stories .container article img {
+   border-radius:50%; 
+   width:100px; 
+   height:auto; 
+}
+
+/* newsletter */
+.newsletter .container {
+   text-align:center; 
+   margin-top: 30px;
+   background-color:#48BB78; 
+   color:white; 
+   padding:20px; 
+}
+
+.newsletter .container form {
+   display:flex; 
+   justify-content:center; 
+   gap:10px; 
+   margin-top:20px; 
+}
+
+.newsletter .container .form-group input,
+.newsletter .container form button {
+   padding:10px 15px; 
+}
+
+.newsletter .container form button{
+   background-color:#5A67D8; 
+   color:white; 
+   border:none; 
+}
+
+/* footer */
+footer .container {
+   background-color:#4A5568; 
+   color:white; 
+   text-align:center; 
+   padding:20px; 
+}
+
