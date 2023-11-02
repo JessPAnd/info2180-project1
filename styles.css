@@ -35,13 +35,30 @@ header .container nav ul li a:hover {
 /* overview */
 .overview-hero .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background-color: #E2E8F0;
 }
+
+.overview-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-hero-image img {
+
+    width: 30%;
+    padding: 10px;
+    height: auto; 
+    object-fit: contain;
+}
+
 
 /* about us */
 .learn-about .container .cards {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
@@ -96,10 +113,16 @@ header .container nav ul li a:hover {
    display:flex; 
    align-items:center; 
    margin-top: 50px;
+   margin-left: 150px;
+   margin-right: 150px;
    gap:20px; 
 }
 
-.stories .container h2,
+.stories .container h2{
+    margin-top: 50px;
+    margin-left: 150px;
+   color:#5A67D8; 
+}
 .stories .container article a {
     margin-top: 50px;
    color:#5A67D8; 
