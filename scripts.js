@@ -1,18 +1,15 @@
-/* Add your JavaScript to this file */
-// Get the form element
 const newsletterForm = document.querySelector('.newsletter form');
 
-// Attach an event listener for form submission
+/*event listener*/
 newsletterForm.addEventListener('submit', function(event) 
 {
-    // Prevent the default form submission behavior
     event.preventDefault();
 
-    // Get the email input field and the message element
+    // email input & message element
     const emailInput = document.querySelector('.newsletter input[type="email"]');
     const messageElement = document.querySelector('.newsletter .message');
 
-    /*if the email input field is not empty*/
+    // if the email input field is not empty
     if (emailInput.value !== '') 
     {
         // Display a success message with the entered email address
