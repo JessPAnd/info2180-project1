@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
         if (emailInput.value !== '') 
         {
             // display a success message
-            messageElement.textContent = `Thank you! Your email address ${emailInput.value} has been added to our mailing list!`;
+            messageElement.textContent = 'Thank you! Your email address ${emailInput.value} has been added to our mailing list!';
         } 
         else 
         {
